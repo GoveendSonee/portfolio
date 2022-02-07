@@ -20,9 +20,9 @@ section#about {
           object-fit: cover;
           filter: blur(4px);
           border: 3px solid $bc1;
+          transition: ease-in-out 4s;
           &:hover{
             filter: blur(0px);
-            transition: 3s;
             transform: scale(.9);
           }
         }

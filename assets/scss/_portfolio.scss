@@ -15,7 +15,8 @@ section#portfolio{
             }
         }
         & .row.portfolio{
-            & .col-lg-3.col-md-6.col-sm-12{
+            & .col-lg-3.col-md-6.col-sm-12, & .col-lg-4.col-md-6.col-sm-12{
+                margin: 1rem 0;
                 & .card.bg-dark.text-white{
                     & img.card-img {
                         height: 22rem;

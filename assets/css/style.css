@@ -44,6 +44,12 @@
   transition: all 3s;
 }
 
+.progress-bar {
+  background-color: #ff5722 !important;
+  -webkit-transition: width 5s ease;
+  transition: width 5s ease;
+}
+
 /* Start Nav-Menu Header */
 nav {
   background: #ff5722 !important;
@@ -230,37 +236,37 @@ section#hero .row .card.govindsah.bio ul li {
   background: #ff3d0094 !important;
   margin: auto 20px;
   border-radius: 50%;
-  animation: bouncing 6s linear infinite alternate-reverse;
+  animation: bouncing 9s linear infinite alternate-reverse;
 }
 
 section#hero .row .card.govindsah.bio ul li:nth-child(2) {
-  -webkit-animation-delay: .4s;
-          animation-delay: .4s;
+  -webkit-animation-delay: .5s;
+          animation-delay: .5s;
 }
 
 section#hero .row .card.govindsah.bio ul li:nth-child(3) {
-  -webkit-animation-delay: .8s;
-          animation-delay: .8s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
 }
 
 section#hero .row .card.govindsah.bio ul li:nth-child(4) {
-  -webkit-animation-delay: 1.2s;
-          animation-delay: 1.2s;
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
 }
 
 section#hero .row .card.govindsah.bio ul li:nth-child(5) {
-  -webkit-animation-delay: 1.6s;
-          animation-delay: 1.6s;
-}
-
-section#hero .row .card.govindsah.bio ul li:nth-child(6) {
   -webkit-animation-delay: 2s;
           animation-delay: 2s;
 }
 
+section#hero .row .card.govindsah.bio ul li:nth-child(6) {
+  -webkit-animation-delay: 2.5s;
+          animation-delay: 2.5s;
+}
+
 section#hero .row .card.govindsah.bio ul li:nth-child(7) {
-  -webkit-animation-delay: 2.4s;
-          animation-delay: 2.4s;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
 }
 
 @-webkit-keyframes bouncing {
@@ -321,13 +327,13 @@ section#about .card .row.describe .col-lg-4.col-sm-12 img.card-img-top {
   -webkit-filter: blur(4px);
           filter: blur(4px);
   border: 3px solid #ff5722 !important;
+  -webkit-transition: ease-in-out 4s;
+  transition: ease-in-out 4s;
 }
 
 section#about .card .row.describe .col-lg-4.col-sm-12 img.card-img-top:hover {
   -webkit-filter: blur(0px);
           filter: blur(0px);
-  -webkit-transition: 3s;
-  transition: 3s;
   -webkit-transform: scale(0.9);
           transform: scale(0.9);
 }
@@ -357,6 +363,10 @@ section#skills .card.text-center .heading span {
   color: #ff5722 !important;
   border-bottom: 5px solid #ff5722 !important;
   border-radius: 50%;
+}
+
+section#skills .card.text-center .row.skillss .col-lg-6.col-sm-12 {
+  margin: 1rem 0;
 }
 
 section#skills .card.text-center .row.skillss .col-lg-6.col-sm-12 .card {
@@ -408,7 +418,11 @@ section#portfolio .card.text-center .heading span {
   color: #ff5722 !important;
 }
 
-section#portfolio .card.text-center .row.portfolio .col-lg-3.col-md-6.col-sm-12 .card.bg-dark.text-white img.card-img {
+section#portfolio .card.text-center .row.portfolio .col-lg-3.col-md-6.col-sm-12, section#portfolio .card.text-center .row.portfolio .col-lg-4.col-md-6.col-sm-12 {
+  margin: 1rem 0;
+}
+
+section#portfolio .card.text-center .row.portfolio .col-lg-3.col-md-6.col-sm-12 .card.bg-dark.text-white img.card-img, section#portfolio .card.text-center .row.portfolio .col-lg-4.col-md-6.col-sm-12 .card.bg-dark.text-white img.card-img {
   height: 22rem;
   -o-object-fit: cover;
      object-fit: cover;
@@ -418,12 +432,12 @@ section#portfolio .card.text-center .row.portfolio .col-lg-3.col-md-6.col-sm-12 
   transition: ease-in-out 13s;
 }
 
-section#portfolio .card.text-center .row.portfolio .col-lg-3.col-md-6.col-sm-12 .card.bg-dark.text-white img.card-img:hover {
+section#portfolio .card.text-center .row.portfolio .col-lg-3.col-md-6.col-sm-12 .card.bg-dark.text-white img.card-img:hover, section#portfolio .card.text-center .row.portfolio .col-lg-4.col-md-6.col-sm-12 .card.bg-dark.text-white img.card-img:hover {
   -o-object-position: bottom;
      object-position: bottom;
 }
 
-section#portfolio .card.text-center .row.portfolio .col-lg-3.col-md-6.col-sm-12 .card.bg-dark.text-white h5.card-title {
+section#portfolio .card.text-center .row.portfolio .col-lg-3.col-md-6.col-sm-12 .card.bg-dark.text-white h5.card-title, section#portfolio .card.text-center .row.portfolio .col-lg-4.col-md-6.col-sm-12 .card.bg-dark.text-white h5.card-title {
   font-size: 1.6rem;
   color: #ff5722 !important;
   font-family: cursive;
@@ -431,7 +445,7 @@ section#portfolio .card.text-center .row.portfolio .col-lg-3.col-md-6.col-sm-12 
   padding-top: 2rem;
 }
 
-section#portfolio .card.text-center .row.portfolio .col-lg-3.col-md-6.col-sm-12 .card.bg-dark.text-white p.card-text {
+section#portfolio .card.text-center .row.portfolio .col-lg-3.col-md-6.col-sm-12 .card.bg-dark.text-white p.card-text, section#portfolio .card.text-center .row.portfolio .col-lg-4.col-md-6.col-sm-12 .card.bg-dark.text-white p.card-text {
   color: white;
   font-family: cursive;
   padding-bottom: 2rem;
@@ -440,7 +454,7 @@ section#portfolio .card.text-center .row.portfolio .col-lg-3.col-md-6.col-sm-12 
   font-size: large;
 }
 
-section#portfolio .card.text-center .row.portfolio .col-lg-3.col-md-6.col-sm-12 .card.bg-dark.text-white p.card-text span {
+section#portfolio .card.text-center .row.portfolio .col-lg-3.col-md-6.col-sm-12 .card.bg-dark.text-white p.card-text span, section#portfolio .card.text-center .row.portfolio .col-lg-4.col-md-6.col-sm-12 .card.bg-dark.text-white p.card-text span {
   color: #ab8787;
 }
 
@@ -455,6 +469,10 @@ section#blog .card.text-center .card.heading {
   text-transform: capitalize;
   color: #ff5722 !important;
   text-decoration: underline;
+}
+
+section#blog .card.text-center .row.blog .col-lg-6.col-sm-12 {
+  margin: 1rem 0;
 }
 
 section#blog .card.text-center .row.blog .col-lg-6.col-sm-12 .card {

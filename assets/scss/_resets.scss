@@ -19,3 +19,8 @@
         }
     }
 }
+
+.progress-bar {
+    background-color: $bc1;
+    transition: width 5s ease;
+}
