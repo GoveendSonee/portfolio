@@ -83,8 +83,8 @@ nav ul li a.active {
   color: #ff5722 !important;
   text-decoration: none;
   background-color: #fff !important;
-  -webkit-transition: 1s;
-  transition: 1s;
+  -webkit-transition: ease-in-out 1s;
+  transition: ease-in-out 1s;
   border-bottom: 0.6rem solid navajowhite !important;
 }
 
@@ -92,8 +92,8 @@ nav ul li a:hover {
   color: #ff5722 !important;
   text-decoration: none;
   background-color: #fff !important;
-  -webkit-transition: 3s;
-  transition: 3s;
+  -webkit-transition: ease-in-out 3s;
+  transition: ease-in-out 3s;
   border-bottom: 0.6rem solid navajowhite !important;
 }
 
@@ -187,30 +187,31 @@ section#hero .row {
   display: block;
 }
 
-section#hero .row .govindsah.bio {
+section#hero .row .card.govindsah.bio {
   text-align: center;
   margin: 1rem;
+  border: none;
 }
 
-section#hero .row .govindsah.bio .name {
+section#hero .row .card.govindsah.bio .name {
   font-size: 4rem;
   padding: 10rem 0 0 0;
   text-transform: capitalize;
 }
 
-section#hero .row .govindsah.bio .name span {
+section#hero .row .card.govindsah.bio .name span {
   color: #ff5722 !important;
   border-bottom: 5px solid #ff5722 !important;
   border-radius: 50%;
 }
 
-section#hero .row .govindsah.bio p.about {
+section#hero .row .card.govindsah.bio p.about {
   padding: 2rem;
   color: #666 !important;
   font-family: "IBM Plex Mono", monospace;
 }
 
-section#hero .row .govindsah.bio ul {
+section#hero .row .card.govindsah.bio ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -222,7 +223,7 @@ section#hero .row .govindsah.bio ul {
   margin: 0 0 4rem 0;
 }
 
-section#hero .row .govindsah.bio ul li {
+section#hero .row .card.govindsah.bio ul li {
   width: 40px;
   height: 40px;
   background: #ff3d0094 !important;
@@ -231,32 +232,32 @@ section#hero .row .govindsah.bio ul li {
   animation: bouncing 6s linear infinite alternate-reverse;
 }
 
-section#hero .row .govindsah.bio ul li:nth-child(2) {
+section#hero .row .card.govindsah.bio ul li:nth-child(2) {
   -webkit-animation-delay: .4s;
           animation-delay: .4s;
 }
 
-section#hero .row .govindsah.bio ul li:nth-child(3) {
+section#hero .row .card.govindsah.bio ul li:nth-child(3) {
   -webkit-animation-delay: .8s;
           animation-delay: .8s;
 }
 
-section#hero .row .govindsah.bio ul li:nth-child(4) {
+section#hero .row .card.govindsah.bio ul li:nth-child(4) {
   -webkit-animation-delay: 1.2s;
           animation-delay: 1.2s;
 }
 
-section#hero .row .govindsah.bio ul li:nth-child(5) {
+section#hero .row .card.govindsah.bio ul li:nth-child(5) {
   -webkit-animation-delay: 1.6s;
           animation-delay: 1.6s;
 }
 
-section#hero .row .govindsah.bio ul li:nth-child(6) {
+section#hero .row .card.govindsah.bio ul li:nth-child(6) {
   -webkit-animation-delay: 2s;
           animation-delay: 2s;
 }
 
-section#hero .row .govindsah.bio ul li:nth-child(7) {
+section#hero .row .card.govindsah.bio ul li:nth-child(7) {
   -webkit-animation-delay: 2.4s;
           animation-delay: 2.4s;
 }
@@ -440,4 +441,45 @@ section#portfolio .card.text-center .row.portfolio .col-lg-3.col-md-6.col-sm-12 
 
 section#portfolio .card.text-center .row.portfolio .col-lg-3.col-md-6.col-sm-12 .card.bg-dark.text-white p.card-text span {
   color: #ab8787;
+}
+
+section#blog .card.text-center {
+  border: none;
+}
+
+section#blog .card.text-center .card.heading {
+  border: none;
+  font-size: 4rem;
+  padding-bottom: 2rem;
+  text-transform: capitalize;
+  color: #ff5722 !important;
+  text-decoration: underline;
+}
+
+section#blog .card.text-center .row.blog .col-lg-6.col-sm-12 .card {
+  border: 3px solid navajowhite !important;
+  -webkit-box-shadow: 0px 6px 16px 6px #ff5722 !important;
+          box-shadow: 0px 6px 16px 6px #ff5722 !important;
+  margin: 4px;
+}
+
+section#blog .card.text-center .row.blog .col-lg-6.col-sm-12 .card .card-body h5.card-title {
+  font-weight: 800;
+  font-size: large;
+  font-family: cursive;
+  color: #ff5722;
+  height: 2.9rem;
+  overflow: hidden;
+}
+
+section#blog .card.text-center .row.blog .col-lg-6.col-sm-12 .card .card-body p.card-text {
+  border: 4px solid #f9dbdb;
+  border-radius: 2rem 0 0;
+  height: 10rem;
+  overflow: hidden;
+  padding: 0.7rem;
+  text-align: justify;
+  -webkit-box-shadow: 5px 6px #a36a6a;
+          box-shadow: 5px 6px #a36a6a;
+  font-family: "IBM Plex Mono", monospace;
 }

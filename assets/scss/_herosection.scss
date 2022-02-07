@@ -1,9 +1,10 @@
 section#hero{
     & .row{
         display: block;
-        & .govindsah.bio {
+        & .card.govindsah.bio {
             text-align: center;
             margin: 1rem;
+            border: none;
             & .name {
                 font-size: 4rem;
                 padding: 10rem 0 0 0;

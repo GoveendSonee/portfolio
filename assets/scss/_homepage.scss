@@ -30,14 +30,14 @@ nav{
                     color: $bc1;
                     text-decoration: none;
                     background-color: $bc2;
-                    transition: 1s;
+                    transition: ease-in-out 1s;
                     border-bottom: .6rem solid $c;
                 }
                 &:hover{
                     color: $bc1;
                     text-decoration: none;
                     background-color: $bc2;
-                    transition: 3s;
+                    transition: ease-in-out 3s;
                     border-bottom: .6rem solid $c;
                 }
             }
