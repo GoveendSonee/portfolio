@@ -1,0 +1,14 @@
+section#ping{
+    background: $c2;
+    color: $bc2;
+    & .card.heading {
+        // border:none;
+        // font-weight: bolder;
+        // font-size: 4rem;
+        // text-transform: capitalize;
+        // padding-bottom: 2rem;
+        & span{
+            color: $bc1;
+        }
+    }
+}

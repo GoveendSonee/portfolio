@@ -28,6 +28,7 @@
 
 .button {
   padding: 3rem;
+  text-align: center;
 }
 
 .button .btn-primary {
@@ -482,4 +483,13 @@ section#blog .card.text-center .row.blog .col-lg-6.col-sm-12 .card .card-body p.
   -webkit-box-shadow: 5px 6px #a36a6a;
           box-shadow: 5px 6px #a36a6a;
   font-family: "IBM Plex Mono", monospace;
+}
+
+section#ping {
+  background: #292929 !important;
+  color: #fff !important;
+}
+
+section#ping .card.heading span {
+  color: #ff5722 !important;
 }
