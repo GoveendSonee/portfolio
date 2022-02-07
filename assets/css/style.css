@@ -26,6 +26,23 @@
   padding: 3rem 0;
 }
 
+.button {
+  padding: 3rem;
+}
+
+.button .btn-primary {
+  background-color: #8b0000 !important;
+  border-color: #8b0000 !important;
+  font-family: cursive;
+}
+
+.button .btn-primary:hover {
+  background-color: #ff5722 !important;
+  border-color: #ff5722 !important;
+  -webkit-transition: all 3s;
+  transition: all 3s;
+}
+
 /* Start Nav-Menu Header */
 nav {
   background: #ff5722 !important;
@@ -288,6 +305,7 @@ section#about .card .heading {
   font-weight: bolder;
   font-size: 4rem;
   text-transform: capitalize;
+  padding-bottom: 2rem;
 }
 
 section#about .card .heading span {
@@ -321,4 +339,105 @@ section#about .card .row.describe .col-lg-8.col-sm-12 .card-body {
   color: #fff !important;
   font-size: larger;
   text-align: justify;
+}
+
+section#skills .card.text-center {
+  border: none;
+}
+
+section#skills .card.text-center .heading {
+  font-size: 4rem;
+  padding-bottom: 2rem;
+  text-transform: capitalize;
+}
+
+section#skills .card.text-center .heading span {
+  color: #ff5722 !important;
+  border-bottom: 5px solid #ff5722 !important;
+  border-radius: 50%;
+}
+
+section#skills .card.text-center .row.skillss .col-lg-6.col-sm-12 .card {
+  -webkit-box-shadow: 0px 5px 13px 6px #ff5722 !important;
+          box-shadow: 0px 5px 13px 6px #ff5722 !important;
+}
+
+section#skills .card.text-center .row.skillss .col-lg-6.col-sm-12 .card .card-text {
+  font-size: 1.6rem;
+  color: darkred !important;
+  font-family: cursive;
+  text-decoration: underline;
+  padding: 2rem;
+}
+
+section#skills .card.text-center .row.skillss .col-lg-6.col-sm-12 .card .progress {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 1.3rem;
+  overflow: hidden;
+  font-size: 1rem;
+  background-color: #292929 !important;
+  border-radius: 7rem;
+  color: darkred !important;
+  font-family: cursive;
+  margin: 2rem;
+}
+
+section#portfolio {
+  background: #292929 !important;
+  color: #fff !important;
+}
+
+section#portfolio .card.text-center {
+  border: none;
+  background: #292929 !important;
+  color: #fff !important;
+}
+
+section#portfolio .card.text-center .heading {
+  font-weight: bolder;
+  font-size: 4rem;
+  text-transform: capitalize;
+  padding-bottom: 2rem;
+}
+
+section#portfolio .card.text-center .heading span {
+  color: #ff5722 !important;
+}
+
+section#portfolio .card.text-center .row.portfolio .col-lg-3.col-md-6.col-sm-12 .card.bg-dark.text-white img.card-img {
+  height: 22rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+  -webkit-transition: ease-in-out 13s;
+  transition: ease-in-out 13s;
+}
+
+section#portfolio .card.text-center .row.portfolio .col-lg-3.col-md-6.col-sm-12 .card.bg-dark.text-white img.card-img:hover {
+  -o-object-position: bottom;
+     object-position: bottom;
+}
+
+section#portfolio .card.text-center .row.portfolio .col-lg-3.col-md-6.col-sm-12 .card.bg-dark.text-white h5.card-title {
+  font-size: 1.6rem;
+  color: #ff5722 !important;
+  font-family: cursive;
+  text-decoration: overline;
+  padding-top: 2rem;
+}
+
+section#portfolio .card.text-center .row.portfolio .col-lg-3.col-md-6.col-sm-12 .card.bg-dark.text-white p.card-text {
+  color: white;
+  font-family: cursive;
+  padding-bottom: 2rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: large;
+}
+
+section#portfolio .card.text-center .row.portfolio .col-lg-3.col-md-6.col-sm-12 .card.bg-dark.text-white p.card-text span {
+  color: #ab8787;
 }
