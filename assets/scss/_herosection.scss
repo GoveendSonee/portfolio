@@ -6,17 +6,18 @@ section#hero{
             margin: 1rem;
             & .name {
                 font-size: 4rem;
-                margin: 16rem 0 0 0;
+                padding: 10rem 0 0 0;
                 text-transform: capitalize;
                 & span{
                     color: $bc1;
+                    border-bottom: 5px solid $bc1;
+                    border-radius: 50%;
                 }
             }
             & p.about {
-                margin: 2rem;
+                padding: 2rem;
                 color: $c1;
                 font-family: $f1;
-                // margin: 0 0 16rem 0;
             }
             & ul {
                 display: flex;

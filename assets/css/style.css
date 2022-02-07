@@ -22,6 +22,10 @@
   list-style: none;
 }
 
+.container {
+  padding: 3rem 0;
+}
+
 /* Start Nav-Menu Header */
 nav {
   background: #ff5722 !important;
@@ -173,16 +177,18 @@ section#hero .row .govindsah.bio {
 
 section#hero .row .govindsah.bio .name {
   font-size: 4rem;
-  margin: 16rem 0 0 0;
+  padding: 10rem 0 0 0;
   text-transform: capitalize;
 }
 
 section#hero .row .govindsah.bio .name span {
   color: #ff5722 !important;
+  border-bottom: 5px solid #ff5722 !important;
+  border-radius: 50%;
 }
 
 section#hero .row .govindsah.bio p.about {
-  margin: 2rem;
+  padding: 2rem;
   color: #666 !important;
   font-family: "IBM Plex Mono", monospace;
 }
@@ -266,4 +272,53 @@ section#hero .row .govindsah.bio ul li:nth-child(7) {
     -webkit-transform: translateY(0);
             transform: translateY(0);
   }
+}
+
+section#about {
+  background: #292929 !important;
+  color: #fff !important;
+}
+
+section#about .card {
+  background-color: #292929 !important;
+  border: none;
+}
+
+section#about .card .heading {
+  font-weight: bolder;
+  font-size: 4rem;
+  text-transform: capitalize;
+}
+
+section#about .card .heading span {
+  color: #ff5722 !important;
+}
+
+section#about .card .row.describe .col-lg-4.col-sm-12 img.card-img-top {
+  height: 24rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-filter: blur(4px);
+          filter: blur(4px);
+  border: 3px solid #ff5722 !important;
+}
+
+section#about .card .row.describe .col-lg-4.col-sm-12 img.card-img-top:hover {
+  -webkit-filter: blur(0px);
+          filter: blur(0px);
+  -webkit-transition: 3s;
+  transition: 3s;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+section#about .card .row.describe .col-lg-8.col-sm-12 {
+  margin: auto;
+  font-family: "IBM Plex Mono", monospace;
+}
+
+section#about .card .row.describe .col-lg-8.col-sm-12 .card-body {
+  color: #fff !important;
+  font-size: larger;
+  text-align: justify;
 }
