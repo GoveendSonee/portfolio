@@ -1,0 +1,28 @@
+/* Theme Description
+-------------------------------------------------
+
+	  Theme Name: Govind Sah
+	  Author: Govind Sah uff Goveend Sonee 
+	  Description: Portfolio Website ( Bootstrap-5 / HTML / SCSS-CSS / React JS / Developed Under WordPress 
+	  Version: 1.0
+	  
+------------------------------------------------- 
+*/
+
+/* CSS Index
+-------------------------------------------------
+ 
+	1. Theme default CSS
+	2. Header
+
+
+-------------------------------------------------
+*/
+
+// Defult
+@import './variables';
+@import './resets';
+
+// Pages
+@import './homepage';
+@import './herosection';

@@ -1,0 +1,67 @@
+section#hero{
+    & .row{
+        display: block;
+        & .govindsah.bio {
+            text-align: center;
+            margin: 1rem;
+            & .name {
+                font-size: 4rem;
+                margin: 16rem 0 0 0;
+                text-transform: capitalize;
+                & span{
+                    color: $bc1;
+                }
+            }
+            & p.about {
+                margin: 2rem;
+                color: $c1;
+                font-family: $f1;
+                // margin: 0 0 16rem 0;
+            }
+            & ul {
+                display: flex;
+                justify-content: center;
+                border-bottom: 1rem solid $bc1;
+                border-radius: 60%;
+                 margin: 0 0 4rem 0;
+                & li {
+                    width: 40px;
+                    height: 40px;
+                    background: #ff3d0094 !important;
+                    margin: auto 20px;
+                    border-radius: 50%;
+                    animation: bouncing 6s linear infinite alternate-reverse;
+                    &:nth-child(2){
+                        animation-delay: .4s;
+                    }
+                    &:nth-child(3){
+                        animation-delay: .8s;
+                    }
+                    &:nth-child(4){
+                        animation-delay: 1.2s;
+                    }
+                    &:nth-child(5){
+                        animation-delay: 1.6s;
+                    }
+                    &:nth-child(6){
+                        animation-delay: 2s;
+                    }
+                    &:nth-child(7){
+                        animation-delay: 2.4s;
+                    }
+                }
+                @keyframes bouncing {
+                    0%{
+                        transform: translateY(0);
+                    }
+                    50%{
+                        transform: translateY(-300px);
+                    }
+                    100%{
+                        transform: translateY(0);
+                    }
+                }
+            }
+        }
+    }
+}
