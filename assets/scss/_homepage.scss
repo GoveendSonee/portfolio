@@ -6,7 +6,11 @@ nav{
     font-size: large;
     font-weight: 700;
     height: 5rem;
+    animation: 300ms ease-in-out 0s normal none 1 running fadeInDown;
     width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 999;
     & label.logo {
         font-size: 2rem;
         line-height: 5rem;
