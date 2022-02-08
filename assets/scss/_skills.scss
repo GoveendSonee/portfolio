@@ -39,3 +39,13 @@ section#skills{
         }
     }
 }
+@media only screen and (max-width: 650px){
+	/*Small smartphones [325px -> 650px]*/
+    section#skills{
+        & .card.text-center{
+            & .heading {
+                font-size: 1.54rem;
+            }
+        }
+    }
+}

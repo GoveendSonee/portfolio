@@ -39,3 +39,14 @@ section#about {
     }
   }
 }
+@media only screen and (max-width: 650px){
+	/*Small smartphones [325px -> 650px]*/
+  section#about {
+    & .card{
+      & .heading {
+        font-size: 1.54rem;
+        padding-bottom: 1rem;
+      }
+    }
+  }
+}

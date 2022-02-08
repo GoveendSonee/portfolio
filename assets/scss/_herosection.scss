@@ -67,3 +67,16 @@ section#hero{
         }
     }
 }
+@media only screen and (max-width: 650px){
+	/*Small smartphones [325px -> 650px]*/
+    section#hero{
+        & .row{
+            & .card.govindsah.bio {
+                & .name {
+                    font-size: 1.54rem;
+                    padding: 6rem 0 0 0;
+                }
+            }
+        }
+    }
+}
